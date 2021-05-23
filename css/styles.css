@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+body main {
+    display: flex;
+    margin: 5rem;
+    height: 400px;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+body main .card {
+    padding: 2.5rem;
+    width: 260px;
+}
+
+body main .card .card-heading {
+    color: hsl(0, 0%, 95%);
+    margin: 0.5rem 0;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+}
+
+body main .card .card-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+body main .card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+body main .card:nth-child(1) button {
+    color: hsl(31, 77%, 52%);
+}
+
+body main .card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+body main .card:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+
+body main .card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+body main .card:nth-child(3) button {
+    color: hsl(179, 100%, 13%);
+}
+
+body main .card button {
+    font-family: "Lexend Deca", sans-serif;
+    margin-top: 3rem;
+    height: 2.3rem;
+    width: 7rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+body main .card button:hover {
+    border: solid white 2px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+@media all and (max-width: 790px) {
+    body {
+        height: unset;
+    }
+    body main {
+        flex-direction: column;
+        height: unset;
+        margin: 2rem;
+    }
+    body-main .card .card-icon {
+        height: 2rem;
+    }
+    body main .card button {
+        margin-top: 1rem;
+    }
+}
